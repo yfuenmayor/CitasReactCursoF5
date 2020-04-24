@@ -1,0 +1,32 @@
+Normalize css
+Skeleton css --> Como bootstrap
+
+librerias
+--------------------------------------------------------------
+
+useEffect( () => {}, []): Se usa para escuchar cambios hechos en el DOM o en un STATE y se importa como useState
+
+    useEffect ( () => {
+        //Funcionalidad al cambiar 
+    }, [State]);
+
+PropTypes : Se usa para documentar todos los props que le pasamos a nuestros componentes
+este de importa en cada uno de ellos y en la parte final se documenta:
+
+componenteName.PropTypes = {
+    prop1: PropTypes.tipoElemeto.otras
+}
+
+Finalizando proyecto y creando version de produccion del mismo
+--------------------------------------------------------------
+
+En la consola donde iniciamos el servidos nos mostrara si hay variables sin 
+usar o si tenemos otro tipo de errores, de estar todo OK procedemos a crear 
+la version de produccion de la siguiente manera:
+    
+    - Ejecutamos Ctrl + C en la consola
+    - Ejecutamos: npm run build
+
+Una vez hecho esto se crea la carpeta Build en el directorio del proyecto, carpeta que es la 
+version de produccion del mismo. Esta la podemos colocar dentro de nuestra cuenta de 
+netlify y obtendremos un link para poderlo compartir
